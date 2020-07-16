@@ -8,22 +8,46 @@ namespace ConvertHTMLtoMVC.Controllers
 {
     public class HomeController : Controller
     {
+        //This action is used to render the content from index.html
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        //New action to render content from HTML.html
+        public ActionResult HTML()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        //New action to render content from CSS.html
+        public ActionResult CSS()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        //New action to render content from Resources/index.html
+        public ActionResult Resources()
+        {
+            return View();
+        }
+
+        //New action to render content from css_topics/fonts.html
+        public ActionResult Fonts()
+        {
+            return View();
+        }
+       
+
+        //New action to render content from css_topics/colors.html
+        public ActionResult Colors()
+        {
+            return View();
+        }
+
+        //New action to render content from css_topics/Images.html
+        public ActionResult Images()
+        {
             return View();
         }
     }

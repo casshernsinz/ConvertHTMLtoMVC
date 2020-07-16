@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Colors";
+}
+
+<aside id="rightColumn">
+    <h2 id="asideHeader">Topics</h2>
+    <ul>
+        <li>
+            <a href="@Url.Action("Colors","Home")">Colors</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Fonts","Home")">Fonts</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Images","Home")">Images</a>
+        </li>
+    </ul>
+
+    <h2 id="asideHeader"> External Resources</h2>
+    <ul class="asideList">
+        <li>
+            <a href="https://color.adobe.com">Adobe Color CC</a>
+        </li>
+        <li>
+            <a href="http://www.colorzilla.com/gradient-editor/">Gradient Generator</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/css/css3_gradients.asp">W3Schools Color Gradients</a>
+        </li>
+    </ul>
+</aside>
+<section class="mainWrapper colors" id="leftColumn">
+    <article>
+        <h1>Color Demos</h1>
+        <p id="colordemo1"<span>Hexadecimal:</span>This is an example using colors in CSS format in HTML.</p>
+        <p id="colordemo2"<span>Hex Shorthand:</span>This is an example using colors in CSS format in HTML.</p>
+        <p id="colordemo3"<span>RGB:</span>This is an example using colors in CSS format in HTML.</p>
+        <p id="colordemo4"<span>RGBA:</span>This is an example using colors in CSS format in HTML.</p>
+        <p id="colordemo5"<span>Named Color:</span>This is an example using colors in CSS format in HTML.</p>
+    </article>
+</section>

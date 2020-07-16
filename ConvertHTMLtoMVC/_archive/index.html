@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--
+    This is a comment in HTML. There are no single line comments so I must open and close these. 
+    
+    These comments can be seen when you view page source. They are client side comments.
+
+    You cannot nest comments (in HTML).
+
+    DocType Declaration:
+    Provides Browser with rules for markup language being used "We will be using HTML5"
+-->
+<html> <!--Indicates that everything inside of these tags -->
+
+<head>
+    <!--
+
+    HEAD TAGES:
+        1) Holds meta data(info about info) about the HTML doc
+        2) Anything inside the headtags will not be displayed to the user
+        #) Inside of the head tags you will:
+            a. Title tags: Page title, used in the browser tab, bookmarks, and by search engines
+            b. Meta tags: provide information about the HTML doc, Important for SEO (Search Engine Optimization)
+            c. Link tags: provide access to CSS files
+            d. Script tags: provide acces to JS files
+    -->
+    <meta charset="utf-8" /> <!--Specifies the character encoding for the HTML doc. Default character encoding for HTML5-->
+    <meta name="keywords" content="learning, html, css, website basics, FED1" />
+    <meta name="author" content="David Hall" />
+    <title>Web Sandbox (FED1 Class Site)</title>
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--
+        Body Tags:
+        1) Second Tag nested directly inside the HTML tags
+        2) Containts the content of the page that will be displayed to the user
+        3) Can also contain JS code or links to JS files (usually at the bottom)
+        4) Inside the body tags are Structural Tags which are tags that markup and provide structure to the content
+    -->
+    <header > <!--header is a container at the top of a page or section-->
+        <div id="headerOverLay">
+            <h1>Web Sandbox</h1><!--Site title in the page banner-->
+            <p>Notes and Resources for HTML and CSS</p><!--Tag Line-->
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="HTML.html">HTML</a>
+            </li>
+            <li>
+                <a href="CSS.html">CSS</a>
+            </li>
+            <li>
+                <a href="resources/index.html">Resources</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--A main is the container for the primary page content and should only be used once per page-->
+        <aside id="rightColumn">
+            <!--An aside holds content that is indirectly related to the main content of a page or section-->
+            <h2>Key Terms</h2>
+            <div class="asideWrapper">
+                <p>This is an area where you can list key terms and important notes from FED1</p>
+
+                <!--TODO Add Notes/Key terms here-->
+            </div>
+        </aside>
+        <section class="mainWrapper" id="leftColumn">
+            <!-- Is a generic section of a page or block of content. It is for thematic grouping of content-->
+            <h1>Web Sandbox: Let's Build Stuff</h1>
+
+            <article id="frontendDev">
+                <!--An article is a specific type of section. It holds content that could be independantly reproduced.-->
+                <h2>Front-End Development</h2>
+                <p>
+                    Front-End development is the tier of fullstack web development that deals with the visual elements of an application that a user interacts with.<br /> The main three languages used in Front-End development is HTML, CSS, and JavaScript. These are the three languages that web browsers can understand.
+                    <br /> <br /><!--This is a Line Break also known as a self-closing tab, no attributes needed-->
+                    If you were to compare this tier of development to a part of the human body, it would be like the skin.
+                </p>
+                <section>
+                    <!--This is a subsection within a larger block of content-->
+                    <img src="images/HTML_logo.png" alt="logo for coding language HTML" title="HTML" id="html" />
+                    <h3>HTML</h3>
+                    <p>
+                        Hypertext Markup Language (HTML) is used to define the structure of the content of a web page.<br /> It is arguably the most important Front-End development language, because the other two languages use HTML elements to perform their respective functions.
+
+                    </p>
+                </section>
+
+                <section>
+                    <!--This is a subsection within a larger block of content-->
+                    <img src="images/CSS_logo.png" alt="logo for coding language HTML" title="CSS" id="css" />
+                    <h3>CSS</h3>
+                    <p>
+                        Cascading Stylesheets (CSS) is used for the formatting and layout of web page content. <br />It was introduced as a way to separate the concerns of markup (HTML) and formatting (CSS) into separate files.
+
+                    </p>
+                </section>
+
+                <section>
+                    <!--This is a subsection within a larger block of content-->
+                    <img src="images/JS_logo.png" alt="logo for coding language JavaScript" title="JS" id="js" />
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript (JS) allows us to make our web pages more interactive. Its primary used to provide the ability to perform programming logic in the Front-End, react to events, and validate form data.
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h2>This is Lorem Ipsum (Sample Text)</h2>
+                <p>
+                    Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created.<br /> Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh non tortor efficitur vestibulum ut sit amet nisi. Phasellus magna libero, cursus sed nibh non, maximus pulvinar ligula. Aliquam consequat commodo neque, ac egestas eros ultrices et. Quisque aliquam nisl molestie, pharetra justo vitae, tincidunt leo. Vivamus ornare et purus quis hendrerit. Curabitur finibus quam ac leo porttitor blandit. Maecenas pulvinar dui urna, eget vehicula nulla mattis non. Curabitur sollicitudin arcu dui, sed ullamcorper urna tincidunt ut.
+                </p>
+                <p>
+
+                    Suspendisse faucibus dapibus erat et maximus. Integer ornare consequat est sollicitudin molestie. Maecenas ut est mi. Mauris vulputate, mi non luctus consectetur, felis nisi porttitor felis, ac faucibus elit nunc et lorem. Sed non mi urna. Cras eget enim fringilla, lacinia lectus eget, egestas lorem. Morbi feugiat mollis malesuada. Sed mollis ullamcorper metus vel tempor.
+                </p>
+
+                <p>
+                    Nunc libero nibh, posuere sed convallis in, ullamcorper tincidunt leo. Etiam sollicitudin leo dolor, vel gravida turpis feugiat vitae. Nullam a egestas dui, in bibendum libero. Maecenas varius metus purus. Proin condimentum efficitur metus at facilisis. Duis id luctus velit, in tempor nisi. Nam malesuada nulla id sem lacinia, commodo feugiat mi volutpat. Donec malesuada diam sit amet lorem efficitur egestas. Curabitur sollicitudin et justo quis varius.
+                </p>
+
+                <p>
+                    Etiam sit amet accumsan metus, id tincidunt ipsum. Curabitur cursus mi eu finibus ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque dignissim nisi tortor. Integer sodales porta ipsum, eget ultricies mauris congue ac. Donec a elementum neque, ac varius magna. Mauris ut rhoncus nunc. Nulla facilisi.
+                </p>
+
+                <p>
+                    Quisque sapien mi, maximus a justo eu, egestas pharetra lorem. Suspendisse sed euismod dolor. Aenean interdum nec lacus eget tempus. Vestibulum at ultricies tortor. Aliquam erat volutpat. Praesent vehicula justo eros, ut sollicitudin eros egestas at. Aenean accumsan porta lorem, sed maximus lorem tincidunt vel. Integer ornare, orci sit amet pharetra euismod, ante purus semper quam, consequat ultricies neque felis eget felis. Maecenas nec nisi vitae metus lacinia malesuada.
+                </p>
+            </article>
+        </section>
+
+    </main>
+        <footer>
+            <!--
+            A footer is a container at the bottom of a page or section and usually provides closing info.
+            Special character are displayed using Character Entity References
+            -Starts with &amp; => intellisense for a reference list
+            -Starts with &amp; => intellisense for a reference list
+            -->
+            &copy; Copyright 2020 David Hall
+        </footer>
+    
+</body>
+</html>
